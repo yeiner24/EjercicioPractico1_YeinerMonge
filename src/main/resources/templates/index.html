@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Gym Fit</title>
+
+<style>
+body{
+background:#121212;
+color:white;
+font-family:Arial;
+margin:0;
+}
+
+header{
+background:black;
+padding:20px;
+text-align:center;
+}
+
+nav{
+background:#222;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+}
+
+.contenido{
+padding:30px;
+text-align:center;
+}
+
+footer{
+background:black;
+padding:15px;
+text-align:center;
+margin-top:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>GYM FIT</h1>
+<p>Entrena con nosotros</p>
+</header>
+
+<nav>
+<a th:href="@{/}">Inicio</a>
+<a th:href="@{/categoria/listado}">Categorías</a>
+<a th:href="@{/servicio/listado}">Clases</a>
+<a th:href="@{/contacto}">Contacto</a>
+</nav>
+
+<div class="contenido">
+
+<h2>Clase Destacada</h2>
+
+<h3>HIIT EXTREMO</h3>
+
+<p>
+Entrenamiento de alta intensidad.
+</p>
+
+<iframe width="560" height="315"
+src="">
+</iframe>
+
+</div>
+
+<footer>
+<p>© Copy 2026 Gym Fit</p>
+</footer>
+
+</body>
+</html>
